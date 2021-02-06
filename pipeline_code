@@ -1,4 +1,4 @@
-upipeline{
+pipeline{
     agent any
     stages{
         stage("checkout from thamo's repo"){
