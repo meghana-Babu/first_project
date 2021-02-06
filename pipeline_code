@@ -1,9 +1,9 @@
-pipeline{
+upipeline{
     agent any
     stages{
-        stage("myname"){
+        stage("checkout from thamo's repo"){
             steps{
-                echo "my name is meghana"
+                checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/thamunkpillai/webapplication.git']]])
             }
             
         }
