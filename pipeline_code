@@ -1,0 +1,17 @@
+pipeline{
+    agent any
+    stages{
+        stage("myname"){
+            steps{
+                echo "my name is meghana"
+            }
+            
+        }
+        stage("print"){
+            steps{
+                echo "hello world"
+            }
+        }
+    }
+    
+}
